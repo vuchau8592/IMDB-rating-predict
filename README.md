@@ -1,6 +1,15 @@
 # IMDB_rating_predict
-Extension version of previous IMDB classification project. In this project, we will try to predict the IMDB score of movies with different regressors. Our expectation is that we can come up with a model that can achieve at least 70% accuracy when predicting.
+Extension version of previous IMDB classification project. This project tries to predict the IMDB score of movies with different regressors.
 
-In this project, the dataset contains 28 variables for 5043 movies, spanning across 100 years in 66 countries.Here is the link of original dataset from dataworld: https://data.world/data-society/imdb-5000-movie-dataset.
+The dataset used in this project is 5000 IMDB movie. Here is the link of original dataset from dataworld: https://data.world/data-society/imdb-5000-movie-dataset.
 
-This dataset will be processed the same way as it was in the IMDB-classification-project. If you want to have detail and descriptions how the dataset is processed please take a look at IMDB-classification-project.
+Technique and model used:
+- Data cleaning & analysis: Numpy, Pandas
+- Data visualization: Plotly, Seaborn 
+- Data preprocessing: OneHotEnconder, Feature Selection, Polynomial Feature
+- Models:
+	- Linear Regressor, RANSAC, SGDRegressor
+	- SVC
+	- DecisionTreeRegressor
+	- Ensemble: VotingRegressor, Bagging, RandomForest, Adaboost, XGBoost
+
